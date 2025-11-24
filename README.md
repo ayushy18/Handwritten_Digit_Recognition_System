@@ -1,98 +1,172 @@
-# Handwritten Digit Recognition System ✍️🔢
+🧠 Handwritten Digit Recognition System | Final Year Project
 
-A final year project that builds a **Handwritten Digit Recognition System** using a **Neural Network** trained on labeled digit images.  
-The model learns to classify digits (0–9) from images and can be used for applications like digitized forms, bank cheques, and automated data entry.
-
----
-
-## 📚 Table of Contents
-
-- [Overview](#-overview)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Dataset](#-dataset)
-- [Project Structure](#-project-structure)
-- [Model Architecture](#-model-architecture)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#-usage)
-  - [Run in Google Colab](#run-in-google-colab)
-  - [Run Locally](#run-locally)
-- [Results](#-results)
-- [Future Improvements](#-future-improvements)
-- [Screenshots](#-screenshots-optional)
-- [Project Report / Documentation](#-project-report--documentation)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Author](#-author)
+A Deep learning-based handwritten digit classification system that identifies digits (0–9) from image pixel data using a **Neural Network** trained on the MNIST-style dataset.  
+This project demonstrates the workflow of real-world AI applications—from dataset preprocessing to model training, evaluation, and testing.
 
 ---
 
-## 🔍 Overview
+ 📁 Project Overview
 
-The **Handwritten Digit Recognition System** aims to automatically identify digits (0–9) from images using a supervised learning approach.
+Handwritten digit recognition is a classical Deep learning problem used in fields like:
 
-Key ideas:
-- Input: Pixel values of handwritten digit images.
-- Output: Predicted digit label (0–9).
-- Backend: A Neural Network trained on a labeled dataset.
-- Goal: Achieve high accuracy on unseen test data and demonstrate understanding of **Machine Learning** and **Deep Learning** concepts.
+- Postal automation (ZIP code reading)
+- Bank cheque processing
+- Document digitization
+- OCR-based systems
 
-This project is implemented in **Python** using a Jupyter/Colab notebook:
-
-> `HandWritten_Digit_Recognition_System.ipynb`
+This project uses a **Supervised Learning** approach and focuses on developing a manually designed neural network architecture and training it with labeled digit images.
 
 ---
 
-## ✨ Features
+🚀 Key Objectives
 
-- Preprocessing of raw pixel data (normalization, reshaping, etc.)
-- Train–test split and model training pipeline
-- Implementation of a **Neural Network classifier**
-- Evaluation using metrics like **accuracy** and **confusion matrix**
-- Visualization of:
-  - Sample digits from the dataset
-  - Training and validation loss/accuracy curves
-- Easy-to-run notebook (Google Colab / Jupyter)
+✔ Build a fully functional digit classifier  
+✔ Train and evaluate the model using image dataset  
+✔ Visualize dataset and training metrics  
+✔ Demonstrate model performance and predictions  
+
+---
+
+🧪 Features
+
+- Dataset cleaning & preprocessing
+- Data visualization (sample images, label count)
+- Train-test split strategy
+- Fully functional Machine Learning pipeline
+- Performance metrics (accuracy, loss graph, confusion matrix)
+- Supports inference on new digit samples (optional)
 
 ---
 
 ## 🛠 Tech Stack
 
-**Programming Language**
-- Python
-
-**Main Libraries** (edit as per your actual code):
-- NumPy  
-- Pandas  
-- Matplotlib / Seaborn  
-- Scikit-learn  
-- TensorFlow
+| Category | Technologies Used |
+|---------|------------------|
+| Language | Python |
+| ML Libraries | NumPy, Pandas, Scikit-learn |
+| Deep Learning | TensorFlow |
+| Visualization | Matplotlib, Seaborn |
+| Platform | Jupyter Notebook / Google Colab |
 
 ---
 
-## 🗂 Dataset
+## 📦 Dataset
 
-The project uses digit image data stored as CSV files:
+The project uses the following dataset files:
 
-- `Train.csv` – Training data (pixel values + labels)
-- `test.csv` – Test data (pixel values only or with labels depending on your dataset)
+| File Name | Description |
+|----------|-------------|
+| `Train.csv` | Labeled pixel data for training |
+| `test.csv` | Unlabeled/labeled data for testing |
 
-Each row represents one image:
-- One column for the **label** (digit 0–9) – in training data
-- Remaining columns for **pixel values**
-
-> ⚠️ If you are using a specific public dataset (like Kaggle Digit Recognizer or MNIST), mention it here and add a link.
+- Each row contains **784 pixel values (28×28 image)** and a **label column** (for training).
+- Pixel values range from **0 (white)** to **255 (black)**.
 
 ---
 
-## 📁 Project Structure
+## 📂 Folder Structure
 
-```text
-Handwritten-Digit-Recognition/
-├─ HandWritten_Digit_Recognition_System.ipynb   # Main notebook
-├─ Train.csv                                    # Training data
-├─ test.csv                                     # Test data
-├─ README.md                                    # Project documentation
-└─ (optional) other helper scripts/files
+```
+
+📁 Handwritten-Digit-Recognition
+│
+├── HandWritten_Digit_Recognition_System.ipynb   # Main project notebook
+├── Train.csv
+├── test.csv
+├── README.md
+└── requirements.txt
+
+````
+
+---
+
+## 🧠 Model Architecture
+
+| Layer Type | Description |
+|-----------|-------------|
+| Input Layer | Flattened 28×28 pixel image (784 neurons) |
+| Hidden Layers | Fully connected layers with ReLU activation |
+| Output Layer | 10 neurons (softmax) for digits 0–9 |
+
+### Model Configuration (Example):
+
+- **Optimizer:** Adam  
+- **Loss Function:** Sparse Categorical Crossentropy  
+- **Metrics:** Accuracy  
+- **Epochs:** 10–20 (modifiable)
+
+---
+
+## ⚙ Installation & Setup
+
+### 📌 Step 1: Clone the Repo
+
+```bash
+git clone https://github.com/your-username/Handwritten-Digit-Recognition.git
+cd Handwritten-Digit-Recognition
+````
+
+### 📌 Step 2: Install Required Libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+### 📌 Step 3: Open the Notebook
+
+```bash
+jupyter notebook
+```
+
+Or upload the `.ipynb` to Google Colab.
+
+---
+
+## ▶ Running the Model
+
+1. Load the dataset
+2. Normalize & preprocess pixel values
+3. Train the neural network
+4. Evaluate accuracy
+5. Test predictions
+
+---
+
+## 📊 Results & Performance
+
+| Metric            | Score      |
+| ----------------- | ---------- |
+| Training Accuracy | ** 96.81% ** |
+| Test Accuracy     | **97.13%** |
+
+
+---
+
+## 🎓 Project Use Case
+
+This project fulfills the academic requirements for a **Deep Learning Final Year Project**, showcasing:
+
+* DL workflow understanding
+* Data preprocessing techniques
+* Neural network implementation skills
+* Research, documentation, and evaluation knowledge
+
+
+---
+
+👨‍💻 Team Members:
+Ayush Yadav
+🎓 B.Tech Computer Science (Data Science & AI)
+202210101150081
+Nandini Agnihotri
+🎓 B.Tech Computer Science (Data Science & AI)
+202210101150066
+Vaishali Gupta
+🎓 B.Tech Computer Science (Data Science & AI)
+202210101150068
+Suyash Sharma
+🎓 B.Tech Computer Science (Data Science & AI)
+202210101150076
+
+---
+
