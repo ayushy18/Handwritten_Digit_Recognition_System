@@ -16,7 +16,6 @@ Handwritten digit recognition is a classical Deep learning problem used in field
 
 This project  focuses on developing a manually designed neural network architecture and training it with labeled digit images.
 
-Model:https://aistudio.google.com/app/apps/drive/1Oqwl5renr1BjQodLNojfTfvGeAs5k_KM?showPreview=true&showAssistant=true&fullscreenApplet=true
 ---
 
 🚀 Key Objectives
@@ -155,19 +154,9 @@ This project fulfills the academic requirements for a **Deep Learning Final Year
 
 ---
 
-👨‍💻 Team Members:
+👨‍💻Developed By:
 Ayush Yadav
 🎓 B.Tech Computer Science (Data Science & AI)
 202210101150081
-Nandini Agnihotri
-🎓 B.Tech Computer Science (Data Science & AI)
-202210101150066
-Vaishali Gupta
-🎓 B.Tech Computer Science (Data Science & AI)
-202210101150068
-Suyash Sharma
-🎓 B.Tech Computer Science (Data Science & AI)
-202210101150076
-
 ---
 
