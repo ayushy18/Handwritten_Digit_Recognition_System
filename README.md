@@ -157,6 +157,5 @@ This project fulfills the academic requirements for a **Deep Learning Final Year
 👨‍💻Developed By:
 Ayush Yadav
 🎓 B.Tech Computer Science (Data Science & AI)
-202210101150081
 ---
 
